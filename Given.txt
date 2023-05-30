@@ -1,0 +1,28 @@
+Develop a fitness tracking application that allows users to track their workouts and view their progress over time. The application should have the following features.
+A- View available workouts - a user should be able to view a list of available workouts including the name and calories burned per minute
+B- Add new workouts - Users should be able to add new workouts to their workout history by selecting a workout from the available workouts and entering the duration and date of the workout
+C- View workout history - Users should be able to view their workout history , including the name of the workout, duration, calories burned, and date
+
+Requirements:
+A- User interface - Create a user-friendly command line interface that allows users to interact with the application and perform the different actions described in the exercice. Provide clear prompts and helpful feedback to guide users through the different steps.
+B- Object oriented programming (OOP) concepts - To make the application more flexible and extensible, you should use OOP concepts such as classes, objects and interfaces to organize and manage the workout and user data. Use interfaces to represent the different types of data that the application deals with, such as workouts and workout history to make the code modular and extensible
+C- Text data storage - The workout data should be stored in text files.
+
+Hints
+here are some hints concerning the classes and interfaces that can be used in the fitness tracking application
+
+WorkoutInerface:
+getName() - Returns the name of the workout
+getCaloriesPerMinute() - Returns the number of calories burned per minute for the workout
+
+WorkoutHistoryInterface:
+addWorkout(Workout workout, int duration, Date date, User user) - Adds a new workout to the workout history with the specified duration and date
+getCompletedWorkouts(User user) - Returns a list of completed workouts, including the duration and date for each workout.
+getTotalCaloriesBurned(User user) - Return the total number of calories burned for all completed workouts
+
+UserInterface:
+getName() - returns the name of the user
+getId() - returns the id of the user
+getWorkoutHistory() - returns the workout history for the user
+
+Note that the workout, workoutHistory, and user classes all implement the corresponding interfaces to ensure consistency and modularity in the code
